@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>lista de professores</title>
+</head>
+<body>
+    <h1>Professores</h1>
+    <p>Árton ministra construção de Paginas Web.</p>
+    <p>Diego ministra IHC.</p>
+    <p>Joel ministra Banco de Dados.</p>
+    <p>Igor ministra Inteligência Artificial.</p>
+
+</body>
+</html>
