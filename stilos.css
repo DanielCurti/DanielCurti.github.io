@@ -1,0 +1,23 @@
+body { 
+	background-color: gray;
+}
+
+h1 {	
+	font-family: Ubuntu;
+}
+
+p{
+	color: blue;
+	border: 2px dashed white;
+}
+
+#dani {
+	background: red;
+	color: yellow;
+	font-family: Ubuntu;
+}
+
+.incriveis {
+	color:orange;
+	font-family: Ubuntu;
+}
