@@ -1,0 +1,29 @@
+body {
+	background-color: #eee;
+}
+table {
+	border-collapse: collapse;
+	background-color: #ddd;
+}
+tr, td, th {
+	border: solid 1px;
+	padding: 15px;
+}
+.a1, th {
+	background-color: #558;
+	font-size: 110%;
+	color: #fff;
+}
+#a2 {
+	font-size: 80%;
+	padding-right: 15%;
+	padding-left: 15%; 
+	color: #888;
+
+}
+h1, h2, h3 {
+	color: #840;
+}
+#ad {
+	background-color: #840;
+}

@@ -1,15 +1,33 @@
+a:link, a:visited {
+		text-decoration: none;
+		color: #fff
+	}
+	a:hover {
+		text-decoration: underline; 
+		color: #00f
+	}
+	a:active {
+		text-decoration: none;
+		color: #ffffff
+	}
 body {
-	background-color: #999999;
+	background-image: url("fundocafe.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 100%; 
+}
+li, ol, ul{
+	color: white;
 }
 p {
-	color: red;
+	color: #fff;
 }
 h3 {
-	color: blue;
+	color: black;
 }
 h2 {
-	color: pink;
+	color: 111;
 }
 h1 {
-	color: yellow;
+	color: black;
 }
