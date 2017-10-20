@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="pedido.css">
+	<meta charset="utf-8">
+	<title>Formulario</title>
+</head>
+<body>
+	<form>
+		<table>
+
+			<tr><td cosplan="2" class="titulos">Dados de contato</td></tr>
+			<tr><td class="nomes">Nome Completo:</td><td class="campos"><input type="text" placeholder="Jack Java Lee" required size="40"></td></tr>
+			<tr><td class="nomes">Email:</td><td class="campos"><input type="Email" placeholder="jack.java.lee@gmail.com" required size="40"></td></tr>
+			<tr><td class="nomes">Telefone:</td><td class="campos"><input type="" placeholder="(55)99999 9999"></td></tr>
+
+			<tr><td colspan="2" class="titulos">Informações de pedido</td></tr>
+			<tr><td class="nomes">Variedade:</td><td class="campos"><select><option>Grãos da colômbia</option><option>Grãos da Costa Rica></option><option>Grãos da Ilha de Java</option><option>Chá do himalaia</option></select></td></tr>
+			<tr><td class="nomes">Quantidade:</td><td class="campos"><input type="number" value="1" required min="1" max="100"></td></tr>
+			<tr><td class="nomes">Data limite:</td><td class="campos"><input type="number" placeholder="dd/mm/aaaa" required min="13/10/2017"></td></tr>
+			<tr><td class="nomes">Tipo:</td><td><input type="radio" value="inteiros" checked>Grãos Inteiros<input type="radio" value="moidos" class="campos"> Grãos Moidos</td></tr>
+			<tr><td class="nomes">Extras:</td><td><input type="radio" value="presente">Embalar para presente<input type="radio" value="especial" checked>Quero um catálogo com cafés especiais.</td></tr>
+			<tr><td colspan="2" class="titulos">Dados de Entrega</td></tr>
+			<tr><td class="nomes">Endereço:</td><td><input type="text" placeholder="Rua das Girafas. Apto 101-centro" required size="62"></td></tr>
+			<tr><td>Cidade/Estado:</td><td><input type="text" placeholder="Frederico Westphalen" required> / <select><option>RS</option><option>SC</option><option>PR</option></select></td></tr>
+			<tr><td class="nomes">CEP:</td><td><input type="number" placeholder="98400-00" required></td></tr>
+			<tr><td>Observações:</td><td><textArea placeholder="Sem açucar e sem milho, por favor." rows="4" cols="48"></textArea></td></tr>
+			<tr><td></td><td><input type="button" value="Limpar"><input type="submit" value="Enviar pedido"></td>
+
+		</table>
+	</form>
+</body>
+</html>
