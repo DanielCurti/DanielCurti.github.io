@@ -1,10 +1,24 @@
 table {
-	padding: 1%;
-	padding-top: 2%;
-	padding-bottom: 2%;
+	border: solid;
+	border-color: blue;
+	padding: 0;
+	padding-top: ;
+	padding-bottom: 0;
+}
+th, td {
+	padding-top:0.5%; 
+	padding-bottom: 0.5%;
 }
 .titulos {
 	color: #449;
 	font-size: 100%;
 	font-family: arial black;
+}
+.nomes {
+	vertical-align: top;
+	text-align: right;
+}
+.campos {
+	text-align: left;
+	font-size: 100%;
 }
