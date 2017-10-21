@@ -1,0 +1,26 @@
+body {
+	background-color: grey;
+}
+div {
+	background-color: #412;
+	width: 70%;
+}
+.destaque {
+	border: solid; 
+	border-color: white;
+	font-weight: bold; 
+}
+
+.price {
+	color: #0f1;
+	font-family: inherit;
+	font-size: 70%;
+}
+p {
+	color: white;
+	font-size: 140%;
+}
+
+h1 {
+	font-size: 200%;
+}
