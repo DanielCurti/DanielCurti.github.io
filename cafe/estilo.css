@@ -1,14 +1,14 @@
 a:link, a:visited {
 		text-decoration: none;
-		color: #fff
+		color: #fa7
 	}
-	a:hover {
+a:hover {
 		text-decoration: underline; 
-		color: #00f
+		color: #ff2
 	}
-	a:active {
+a:active {
 		text-decoration: none;
-		color: #ffffff
+		color: #faf
 	}
 body {
 	background-image: url("fundocafe.jpg");
@@ -17,17 +17,20 @@ body {
 	background-size: 100%; 
 }
 li, ol, ul{
-	color: white;
+	color: #e91;
 }
 p {
-	color: #fff;
+	color: #ffe;
 }
 h3 {
-	color: #ccc;
+	color: #db8;
 }
 h2 {
-	color: #ddd;
+	color: #c83;
 }
 h1 {
-	color: #eee;
+	font-size: 200%;
+	font-family: verdana;
+	color: #da2;
+	border: 8px double #8B4500;
 }

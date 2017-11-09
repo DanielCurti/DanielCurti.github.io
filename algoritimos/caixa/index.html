@@ -1,0 +1,117 @@
+<html lang="pt-br">
+	<head>
+	  <meta charset="UTF-8">
+	  <title>Banco </title>
+	  
+	  <script>
+		 const SENHA = "*"
+		 var saldo = 0
+		 var quantidade = 0 
+		 var tarifa = 1.5	
+		 var i = 0
+		 var extrato = new Array(1000)
+		var d = new Date();
+		var minutos = d.getMinutes();
+		var hora = d.getHours();
+		var data = d.getDate();
+		var mes = d.getMonth() + 1;
+		 
+		
+		 function tiextrato() {
+		 	document.write("<table>")
+			document.write("<th colspan='2'>")
+			document.write("Descrição")
+			document.write("</th>")
+			document.write("<th colspan='2'>")
+			document.write("Valor")
+			document.write("</th>")
+			document.write("<th colspan='2'>")
+			document.write("Data")
+			document.write("</th>")
+			document.write("<th colspan='2'>")
+			document.write("Operação")
+			document.write("</th>")
+		
+		for (var f = 0; f < i; f++) {
+			document.write("<tr>")
+			document.write(extrato[f])
+			document.write("</tr>")
+			}
+			document.write("</table>")
+		 }
+
+	     function consultar() {
+			 
+			 var senha = prompt("Digite a senha")
+			 
+			 if (senha == SENHA)
+			 	 alert("Seu saldo é R$ " + saldo)
+			 else 
+			     alert("Senha incorreta") 
+		 }
+		 
+		 function sacar() {
+		 	
+			 var senha = prompt("Digite a senha")
+			 
+			 if (senha == SENHA) {
+			 	
+			 	valor = parseFloat(prompt("Digite o valor para sacar"))
+			 	
+			 	if (valor > 0) {
+					
+					if (quantidade >= 3)
+					   valor = valor + tarifa
+					
+					if (valor <= saldo) {
+						saldo = saldo - valor
+						quantidade++
+						alert("Saque efetuado!")						
+						
+						if (quantidade == 3)
+						    alert("Atenção: os próximos saques serão tarifados em R$ " + tarifa)
+									extrato[i] = new Array("<td colspan='2'>" + "Saque   " + "</td>" + "<td colspan='2'>" + "R$ -" + valor + " " +"</td>" + "<td colspan='2'>" + data + "/" + mes +" as "+ hora + ":" + minutos + "</td>" + "<td>" + "</td>" + "<td>" +"Débito"+ "</td>")
+									i++			
+					} else 
+					    alert("Saldo insuficiente")
+					
+				} else 
+				   alert("Valor inválido")
+			 	 
+			 	 
+			 	 
+			 } else 
+			     alert("Senha incorreta") 
+			 
+		 }
+		 
+		 function depositar() {
+			 var valor = parseFloat(prompt("Digite o valor do depósito", "0.00"))
+			 
+			 if (valor > 0 && valor <= 2000) {
+				saldo = saldo + valor 
+				alert("Depósito efetuado com sucesso!")
+				extrato[i] = new Array("<td colspan='2'>" + "Deposito" + "</td>" + "<td colspan='2'>" + "R$ +" + valor + "</td>" + "<td colspan='2'>" + data + "/" + mes +" as "+ hora + ":" + minutos + "</td>" + "<td>" + "</td>" + "<td>" +"Crédito"+ "</td>")
+				i++
+			 } else 
+				alert("O valor máximo do envelope é R$ 2000 (depósito não efetuado)")
+			    
+
+		 }
+	  
+	  </script>
+	
+	
+	</head>
+
+	
+	<body>
+		
+		<input type="button" value="Depósito" onclick="depositar()">
+		<input type="button" value="Saldo" onclick="consultar()">
+		<input type="button" value="Saque" onclick="sacar()">
+		<input type="button" value="Extrato" onclick="tiextrato()">
+		
+		
+	</body>
+</html>
