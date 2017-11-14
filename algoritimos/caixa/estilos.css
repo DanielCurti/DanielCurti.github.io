@@ -1,0 +1,29 @@
+body{
+	background-color: black; 
+}
+#val {
+	color: black;
+	border: solid; 
+	border-radius: 10px;
+	border-color: orange;
+	width: 30%;
+	height: 10%;
+	font-size: 300%;
+
+}
+.did {
+	border-radius: 60px;
+	border: solid;
+	border-color: white;
+	color: orange;
+	background-color: black;
+	font-size:200%; 
+}
+p {
+	color: white;
+	background-color: black;
+	border-radius: 2000px;
+	font-size: 200%;
+	border: solid;
+	border-color: orange;
+}

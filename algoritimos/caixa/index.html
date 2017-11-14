@@ -1,5 +1,7 @@
 ﻿<html lang="pt-br">
 	<head>
+
+		<link rel="stylesheet" type="text/css" href="estilos.css">
 	  <meta charset="UTF-8">
 	  <title>Banco </title>
 	  
@@ -18,7 +20,7 @@
 		 
 		
 		 function tiextrato() {
-		 	document.write("<table>")
+		 	document.write("<table border='1'>")
 			document.write("<th colspan='2'>")
 			document.write("Descrição")
 			document.write("</th>")
@@ -56,7 +58,7 @@
 			 
 			 if (senha == SENHA) {
 			 	
-			 	valor = parseFloat(prompt("Digite o valor para sacar"))
+			 	valor = parseFloat(document.getElementById('val').value)
 			 	
 			 	if (valor > 0) {
 					
@@ -86,13 +88,14 @@
 		 }
 		 
 		 function depositar() {
-			 var valor = parseFloat(prompt("Digite o valor do depósito", "0.00"))
+			 var valor = parseFloat(document.getElementById('val').value)
 			 
 			 if (valor > 0 && valor <= 2000) {
 				saldo = saldo + valor 
 				alert("Depósito efetuado com sucesso!")
 				extrato[i] = new Array("<td colspan='2'>" + "Deposito" + "</td>" + "<td colspan='2'>" + "R$ +" + valor + "</td>" + "<td colspan='2'>" + data + "/" + mes +" as "+ hora + ":" + minutos + "</td>" + "<td>" + "</td>" + "<td>" +"Crédito"+ "</td>")
 				i++
+				document.getElementById('val').value=""
 			 } else 
 				alert("O valor máximo do envelope é R$ 2000 (depósito não efetuado)")
 			    
@@ -106,13 +109,17 @@
 
 	
 	<body>
-		
-		<input type="button" value="Depósito" onclick="depositar()">
-		<input type="button" value="Saldo" onclick="consultar()">
-		<input type="button" value="Saque" onclick="sacar()">
-		<input type="button" value="Extrato" onclick="tiextrato()">
-		<p>Este é apenas um experimento, a senha padrão é 123.
-		
+		<center>
+			<br><br><br><br>
+		<input type="number" placeholder="00.00" id="val">
+		<br><br>
+		<input type="button" value="Depósito" class="did" onclick="depositar()">
+		<input type="button" value="Saldo" class="did" onclick="consultar()">
+		<input type="button" value="Saque" class="did" onclick="sacar()">
+		<input type="button" value="Extrato" class="did" onclick="tiextrato()">
+		<br>
+		<p>Este é apenas um experimento, a senha padrão é 123.</p>
+		</center>
 		
 	</body>
 </html>
