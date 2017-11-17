@@ -1,0 +1,70 @@
+
+body {
+	background-color: #008e99;
+}
+a:link, a:visited {
+	text-decoration: none;
+	color: white; 
+}
+a:hover {
+	text-decoration: underline; 
+	color: grey;
+}
+a:active {
+	text-decoration: none;
+	color: #faf
+}
+h1 {
+	color: white;
+	font-family: verdana;
+}
+h2 {
+	color: grey;
+	font-family: arial black;
+}
+p {
+	font-size: 130%;
+	color: #fff;
+}
+#cabecalho {
+	background-color: #00CED1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 15%;
+}
+#slogan {
+	position: relative;
+	left: 0%;
+	width: 12%;
+	height: 100%;
+}
+#int {
+	position: relative;
+	width: 1000%;
+	color: white;
+	position: relative;
+	left: 12%;
+	top: -65%;
+}
+.itemMenu {
+	padding: 0.08%;
+	font-size: 150%;
+}
+#apresentacao {
+	position: absolute;
+	top: 16%;
+}
+#corpo {
+
+	text-align: center;
+	position: absolute;
+	top: 76%;
+	left: 10%;
+	right: 10%;
+	background-color: #00CED1;
+}
+span {
+	font-size: 150%;
+}
