@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+  <head>
+	<meta charset="UTF-8">
+    <title></title>
+    
+    <script src="https://maps.googleapis.com/maps/api/js" type="text/javascript"></script>
+    
+    
+    <script type="text/javascript">
+		
+		/*
+		   Neste exercício você dispõe de uma tabela com 33 linhas que contém:
+				* nome do aluno
+				* nome do arquivo com a foto (miniatura) do aluno
+				* latitude da casa do aluno
+				* longitude da casa do aluno
+				
+		   O objetivo do exercício é que você adapte o código a seguir de forma 
+		   a plotar no mapa as informações dos colegas da mesma forma como foi feito
+		   com a foto do professor
+		   
+		   Procure utilizar um laço de repetição para automatizar o seu trabalho.
+		
+		
+		*/
+		
+		
+		var alunos = new Array(26)
+		
+		alunos[0] = new Array('Adelar De Mello','adelar.png',-27.476074, -53.173138)
+		alunos[1] = new Array('Alex Vicentini Vargas','alex.png',-27.333189, -53.510181)
+		alunos[2] = new Array('Amanda Hausmann Bender','amanda.png',-27.366135, -53.388334)
+		alunos[3] = new Array('Anderson Strack','anderson.png',-27.367445, -53.404422)
+		alunos[4] = new Array('Cassiano Librelotto Trezzi','cassiano.png',-27.436228, -53.465908)
+		alunos[5] = new Array('Daniel Henrique Curti','daniel.png',-27.367160, -53.172742)
+		alunos[6] = new Array('Daniele Piaia Dos Santos','daniele.png',-27.277079, -53.429709)
+		alunos[7] = new Array('Edson Elias Cazarotto','edson.png',-27.614619, -53.170626)
+		alunos[8] = new Array('Francisco Emerson Moreira','francisco.png',-27.362522, -53.397321 )
+		alunos[9] = new Array('Gabriel Rodrigues Silva','gabriel.png',-27.903845, -53.305262)
+		alunos[10] = new Array('Henrique Abramo Piaia','henriquep.png',-27.372009, -53.490859)
+		alunos[11] = new Array('Henrique Vidi Bogoni','henriqueb.png',-27.391338, -53.433961)
+		alunos[12] = new Array('Inara Menegusso','inara.png',-27.365934, -53.387331 )
+		alunos[13] = new Array('Jean Simonet Dalla Nora','jean.png',-27.359716, -53.408021)
+		alunos[14] = new Array('Jéssica Cristina Pereira','jessica.png',-27.355616, -53.396214)
+		alunos[15] = new Array('Larissa Nienow Scheffer','larissa.png',-27.195029, -53.253831)
+		alunos[16] = new Array('Lucas Kovalcikoski Araujo','lucas.png',-27.354136, -53.378389)
+		alunos[17] = new Array('Marcelo Fabricio Tubias','marcelo.png',-27.372758, -53.747326)
+		alunos[18] = new Array('Natalia Da Silva','natalia.png',-27.357443, -53.406403)
+		alunos[19] = new Array('Orlando Jose de Oliveira Junior','orlando.png',-27.359253, -53.401952 )
+		alunos[20] = new Array('Rafael Lordi','rafael.png',-27.508043, -53.216203)
+		alunos[21] = new Array('Regis Fernando Bender Puppo','regis.png',-27.357480, -53.389597)
+		alunos[22] = new Array('Roberto Froner','roberto.png',-27.421745, -53.425003)
+		alunos[23] = new Array('Rodrigo Lazzaretti','rodrigo.png',-27.677332, -52.990258)
+		alunos[24] = new Array('Tiago Brambilla','tiago.png',-27.201334, -53.256112)
+		alunos[25] = new Array('William Alexandre Ferreira','william.png',-27.608325, -53.166698)
+
+		
+		//As fotos dos alunos podem ser encontradas aqui: http://inf.fw.iffarroupilha.edu.br/~bruno/disciplinas/algoritmos/material/alunos/
+		
+		
+		// variável que indica as coordenadas do centro do mapa
+		var iff = new google.maps.LatLng(-27.390353, -53.430231);
+
+		// variável que indica as coordenadas do marcador
+    	var casaBruno = new google.maps.LatLng(-27.396066, -53.468510);	
+
+    	var aluno = new Array(26)	
+    	
+    	aluno[0] = new google.maps.LatLng(-27.476074, -53.173138)
+		aluno[1] =  new google.maps.LatLng(-27.333189, -53.510181)
+		aluno[2] =  new google.maps.LatLng(-27.366135, -53.388334)
+		aluno[3] =  new google.maps.LatLng(-27.367445, -53.404422)
+		aluno[4] =  new google.maps.LatLng(-27.436228, -53.465908)
+		aluno[5] =  new google.maps.LatLng(-27.367160, -53.172742)
+		aluno[6] =  new google.maps.LatLng(-27.277079, -53.429709)
+		aluno[7] =  new google.maps.LatLng(-27.614619, -53.170626)
+		aluno[8] =  new google.maps.LatLng(-27.362522, -53.397321)
+		aluno[9] =  new google.maps.LatLng(-27.903845, -53.305262)
+		aluno[10] =  new google.maps.LatLng(-27.372009, -53.490859)
+		aluno[11] =  new google.maps.LatLng(-27.391338, -53.433961)
+		aluno[12] =  new google.maps.LatLng(-27.365934, -53.387331)
+		aluno[13] =  new google.maps.LatLng(-27.359716, -53.408021)
+		aluno[14] =  new google.maps.LatLng(-27.355616, -53.396214)
+		aluno[15] =  new google.maps.LatLng(-27.195029, -53.253831)
+		aluno[16] =  new google.maps.LatLng(-27.354136, -53.378389)
+		aluno[17] =  new google.maps.LatLng(-27.372758, -53.747326)
+		aluno[18] =  new google.maps.LatLng(-27.357443, -53.406403)
+		aluno[19] =  new google.maps.LatLng(-27.359253, -53.401952)
+		aluno[20] =  new google.maps.LatLng(-27.508043, -53.216203)
+		aluno[21] =  new google.maps.LatLng(-27.357480, -53.389597)
+		aluno[22] =  new google.maps.LatLng(-27.421745, -53.425003)
+		aluno[23] =  new google.maps.LatLng(-27.677332, -52.990258)
+		aluno[24] =  new google.maps.LatLng(-27.201334, -53.256112)
+		aluno[25] =  new google.maps.LatLng(-27.608325, -53.166698)
+
+		function initialize() {
+		
+		   var mapOptions = {
+			  center: iff,
+			  zoom: 9,
+			  mapTypeId: google.maps.MapTypeId.SATELLITE
+			  
+		   };
+		   
+		   var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+		   
+		   var mIFF = new google.maps.Marker({
+			  position: iff, 
+			  map: map,
+			  title:"Instituto Federal Farroupilha",
+			});
+			
+		   var mBruno = new google.maps.Marker({
+			  position: casaBruno, 
+			  map: map,
+			  title:"Bruno",
+              
+			});
+
+		   var cord = new Array(26)
+		   	for (var i = 0 ; i < 27; i++) {
+		   		cord[i] = new google.maps.Marker({
+			  position: aluno[i], 
+			  map: map,
+			  title:alunos[i][0],
+			  icon: 'http://inf.fw.iffarroupilha.edu.br/~bruno/disciplinas/algoritmos/material/alunos/'+alunos[i][1]
+			});
+		   	}
+		 /*  var cord = new Array(26)
+		   var latitu = new Array(28)
+		    for (n=0; n<25; n++) {
+		    	latitu[n] = new google.maps.LatLng(alunos[n][2,3]),
+		    cord[n] = new google.maps.Marker({
+		   	position: latitu[n],
+		   	map: map,
+		   	title: alunos[n][0],
+		   	});
+
+		   }*/
+
+		}
+		
+		google.maps.event.addDomListener(window, 'load', initialize);    
+    
+    </script>
+    
+    <style>
+		#map-canvas {
+			width: 800px;
+			height: 600px;
+		}
+    </style>
+    
+  </head>
+
+  <body>
+	  
+	  <h3>Pressione F12 ou abra o código fonte para ver as instruções</h3> <hr>
+   	
+   	  <div id="map-canvas"></div>
+   	
+  </body>
+ 
+ </html>
