@@ -1,6 +1,6 @@
 
 body {
-	background-color: #008e99;
+	background-color: #6666ff;
 }
 a:link, a:visited {
 	text-decoration: none;
@@ -19,7 +19,7 @@ h1 {
 	font-family: verdana;
 }
 h2 {
-	color: grey;
+	color: white;
 	font-family: arial black;
 }
 p {
@@ -27,7 +27,7 @@ p {
 	color: #fff;
 }
 #cabecalho {
-	background-color: #00CED1;
+	background-color: #000099;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -42,19 +42,25 @@ p {
 }
 #int {
 	position: relative;
-	width: 1000%;
+	width: 88%;
 	color: white;
 	position: relative;
 	left: 12%;
 	top: -65%;
 }
 .itemMenu {
-	padding: 0.08%;
+	padding: 1%;
 	font-size: 150%;
 }
 #apresentacao {
 	position: absolute;
-	top: 16%;
+	width: 100%;
+	height: 61%;
+	left: 0;
+	right:0;
+	bottom: 0;
+	top: 15%;
+	background-color: white;
 }
 #corpo {
 
@@ -63,7 +69,7 @@ p {
 	top: 76%;
 	left: 10%;
 	right: 10%;
-	background-color: #00CED1;
+	background-color: #000099;
 }
 span {
 	font-size: 150%;
