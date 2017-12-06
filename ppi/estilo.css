@@ -1,6 +1,6 @@
 
 body {
-	background-color: #6666ff;
+	background-color: #00a;
 }
 a:link, a:visited {
 	text-decoration: none;
@@ -15,16 +15,19 @@ a:active {
 	color: #faf
 }
 h1 {
-	color: white;
+	color: #efef11;
 	font-family: verdana;
 }
 h2 {
-	color: white;
+	color: #efef00;
 	font-family: arial black;
+}
+h4 {
+	color: white;
 }
 p {
 	font-size: 130%;
-	color: #fff;
+	color: #efef00;
 }
 #cabecalho {
 	background-color: #000099;
@@ -69,7 +72,7 @@ p {
 	top: 76%;
 	left: 10%;
 	right: 10%;
-	background-color: #000099;
+	background-color: #444;
 }
 span {
 	font-size: 150%;
