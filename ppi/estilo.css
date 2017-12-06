@@ -74,3 +74,10 @@ p {
 span {
 	font-size: 150%;
 }
+#img-responsive{
+max-width: 1080px;   /* Máximo da largura da imagem */
+          width: 100%;
+          max-height: 500px;  /* Máximo da altura da imagem */
+          min-height: auto;      /* Mínimo da altura, por padrão “auto” */
+          background-size:100%;
+}
