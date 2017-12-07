@@ -20,14 +20,15 @@ h1 {
 }
 h2 {
 	color: #efef00;
-	font-family: arial black;
+	font-family: arial black
+	font-size:60%;
 }
 h4 {
-	color: white;
+	color: #efef11;
 }
 p {
 	font-size: 130%;
-	color: #efef00;
+	color: #efef11;
 }
 #cabecalho {
 	background-color: #000099;
