@@ -16,7 +16,8 @@ a:active {
 }
 h1 {
 	color: #efef11;
-	font-family: verdana;
+	font-family: verdana
+	text-align: center;
 }
 h2 {
 	color: #efef00;
@@ -29,6 +30,7 @@ h4 {
 p {
 	font-size: 130%;
 	color: #efef11;
+	text-align: center;
 }
 #cabecalho {
 	background-color: #000099;
