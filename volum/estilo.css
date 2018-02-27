@@ -1,55 +1,26 @@
-	a:link, a:visited {
-		text-decoration: none;
-		color: #000
-	}
-	a:hover {
-		text-decoration: underline; 
-		color: #00f
-	}
-	a:active {
-		text-decoration: none;
-		color: #ffffff
-	}
-	
-	body {
-		background-image: url("capa1.jpg");
-		background-attachment: fixed;
-		background-position: center center;
-	}
-	#texto {
-	position: absolute;
-	top: 10%;
-	bottom: 6%;
-	right: 20%;
-	left: 0;
-	}
+.carousel {
+    width: 100%; /* Altera a largura do carousel */
+    height: 80%; /* Altera a altura do carousel */
+}
 
-	#cabecalho {
-		background-image: url("capa1.jpg");
-		position: fixed;
-		top: 0;
-		left: 0%;
-		bottom: 90%;
-		right: 0;
-	}
+td {
+	width: 60%;
+}
+ body {
+ 	background-color:#cccccc;
+ }
 
-	#apoiadores {
-		position: absolute;
-		left: 80%;
-		right: 0;
-		top: 10%;
-		bottom: 0;
+ .logo {
+ 	font-family: arial black;
+ }
 
-	}
-	h1 {
-		color: #000;
-	}
-
-	h2 {
-		color: #000;
-		}
-	p {
-		font-size: 120%;
-		color: #ffffff;
-	}
-	
+ .btn {
+ 	border-color: orange;
+ 	color:orange;
+ }
+ .mr-sm-2 {
+ 	border-color: orange;
+ }
+ .form-control {
+ 	border-color: orange;
+ }
