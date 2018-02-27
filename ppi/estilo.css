@@ -1,6 +1,6 @@
 
 body {
-	background-color: #6666ff;
+	background-color: #00a;
 }
 a:link, a:visited {
 	text-decoration: none;
@@ -15,16 +15,22 @@ a:active {
 	color: #faf
 }
 h1 {
-	color: white;
-	font-family: verdana;
+	color: #efef11;
+	font-family: verdana
+	text-align: center;
 }
 h2 {
-	color: white;
-	font-family: arial black;
+	color: #efef00;
+	font-family: arial black
+	font-size:60%;
+}
+h4 {
+	color: #efef11;
 }
 p {
 	font-size: 130%;
-	color: #fff;
+	color: #efef11;
+	text-align: center;
 }
 #cabecalho {
 	background-color: #000099;
@@ -68,8 +74,15 @@ p {
 	top: 76%;
 	left: 10%;
 	right: 10%;
-	background-color: #000099;
+	background-color: #444;
 }
 span {
 	font-size: 150%;
+}
+#img-responsive{
+max-width: 1080px;   /* Máximo da largura da imagem */
+          width: 100%;
+          max-height: 500px;  /* Máximo da altura da imagem */
+          min-height: auto;      /* Mínimo da altura, por padrão “auto” */
+          background-size:100%;
 }
