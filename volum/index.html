@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="pt-br">
     <head>
     
@@ -23,21 +23,21 @@
     <body>
         
         <!-- Barra de navegação - Bootstrap -->
-        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar navbar-dark" style="background-color: #304250;"">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-    <a class="navbar-brand" href="#">Volum Mídia</a>
+    <a class="navbar-brand" href="#carouselExampleIndicators">Volum Mídia</a>
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">Home<span class="sr-only"></span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Galeria</a>
+        <a class="nav-link active" href="#">Galeria</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="#">Contatos</a>
+        <a class="nav-link active" href="#">Fale Conosco</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
@@ -73,7 +73,7 @@
                     <img class="d-block w-100" src="foto3.jpg" alt="Third slide">
                     <div class="carousel-caption d-none d-md-block">
                         <h3>Igreja Matriz</h3>
-                        <p>Igreja Matriz durante o dia</p>
+                        <p>Igreja Matriz a noite</p>
                     </div>
                 </div>
             </div>
@@ -85,17 +85,58 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
-
+                <!--book-->
         </div>
-    
-        <div align="center"><h1 id="contato">Contatos</h1></div>
+
+        <div id="book">
+          <div style="background-color:#304250">
+          <h1 align="center">Galeria de fotos</h1>
+          <hr>
+          </div>
+              <div class="row">
+                <div class="col"><a href="https://facebook.com"><img class="img-thumbnail" src="foto3.jpg"><p align="center"><b>Fotografia de rua</b></p></a></div> 
+                <div class="col"><a href="https://facebook.com"><img class="img-thumbnail" src="foto1.jpg"><p align="center"><b>Enzo 2</b></p></a></div> 
+                <div class="col"><a href="https://facebook.com"><img class="img-thumbnail" src="foto2.jpeg"><p align="center"><b>lucas 4</b></p></a></div>
+                <div class="col"><a href="https://facebook.com"><img class="img-thumbnail" src="foto3.jpg"><p align="center"><b>winderson</b></p></a></div> 
+
+          
+        </div>
+
+       
+        <div align="center"><h1 id="contato">Fale conosco</h1></div>
         <hr>
+       
         
         <!-- Formulário - Bootstrap -->
         <footer>
         <table>
           <th><td>
-        <form>
+             <form name="formulario" method="post">
+<input type=hidden name="destino" value="volummidia@gmail.com">
+<input type=hidden name="enviado" value="http://www.danielcurti.github.io/">
+<p><b>Nome:</b><br>
+<input type=text class="form-control" name="nome" size="45"></p><br>
+<p><b>Email:</b><br>
+<input type=text class="form-control" name="email" size="45"></p><br>
+<p><b>Assunto:</b><br>
+<input type=text class="form-control" name="assunto" size="45"></p><br>
+<p><b>Mensagem:</b><br>
+<textarea name="Mensagem" class="form-control" rows="10" cols="60" wrap="virtual"></textarea></p><br>
+<p><input type="submit" value="Enviar Email" class="btn btn-dark"> <input type="reset" class="btn btn-dark" value="Limpar Formulário"></p>
+</form>
+       
+          <td align="center">
+          
+            <p>Página desenvolvida por:</p>
+            <b>Daniel Henrique Curti</b>
+            <p><a href="https://www.facebook.com/danielhenrique.lucietto" target="_blank">fb.com/danielhenriquelucietto</a></p>
+            
+        </footer>
+       </td>
+        <th>
+
+        </table>
+         <!--form>
             <div class="form-group">
                 <label for="Digite seu nome">Nome</label>
                 <input type="text" class="form-control" id="exampleFormControlInput1">
@@ -113,18 +154,8 @@
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
             <button type="button" class="btn btn-dark">Enviar</button>
-        </form>
+        </form>-->
         
-          <td align="center">
-          
-            <p>Página desenvolvida por:</p>
-            <b>Daniel Henrique Curti</b>
-            <p><a href="https://www.facebook.com/danielhenrique.lucietto" target="_blank">fb.com/danielhenriquelucietto</a></p>
-            
-        </footer>
-       </td>
-        <th>
-        </table>
 
     </body>
 </html>
