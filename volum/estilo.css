@@ -24,3 +24,22 @@ td {
  .form-control {
  	border-color: orange;
  }
+ .media {
+ 
+ }
+ h1 {
+ 	color: white;
+ }
+ a {
+ 	color: white;
+ } 
+ #book {
+ 	background-color: #304250;
+ }
+ hr {
+ 	background-color: black;
+ }
+ a:hover {
+		text-decoration: none;
+		color: #ff791f;
+	}
