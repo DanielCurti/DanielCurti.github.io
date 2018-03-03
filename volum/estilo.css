@@ -1,20 +1,29 @@
+body {
+	background-color: #fff;
+}
+.navi{
+	max-height: 45px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
+}
 .carousel {
     width: 100%; /* Altera a largura do carousel */
     height: 80%; /* Altera a altura do carousel */
 }
 
 td {
-	width: 60%;
+	width: 50%;
 }
- body {
- 	background-color:#cccccc;
- }
 
  .logo {
  	font-family: arial black;
  }
 
- .btn {
+ #borda {
  	border-color: orange;
  	color:orange;
  }
@@ -24,21 +33,48 @@ td {
  .form-control {
  	border-color: orange;
  }
- .media {
- 
- }
- h1 {
- 	color: white;
- }
- a {
- 	color: white;
- } 
- #book {
+ .book {
  	background-color: #304250;
+  }
+ 
+ .row {
+ 	width: 100%;
  }
- hr {
- 	background-color: black;
+ #colin {
+ 	margin-left: 2%;
  }
+ 
+ h2 {
+ 	color: white;
+ }
+ 
+ #a {
+ color: black;
+ } 
+ .footer {
+ 	max-height: 30px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.book {
+	border-radius: 20px;
+}
+.media {
+	background-color: white;
+	border:solid;
+	border-radius: 6px;
+}
+a {
+	color: white;
+}
+td {
+	padding: 5%;
+}
  a:hover {
 		text-decoration: none;
 		color: #ff791f;
