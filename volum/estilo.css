@@ -1,8 +1,7 @@
 body {
-	background-color: #fff;
+    background-color: #205250;
 }
 .navi{
-	max-height: 45px;
     position: fixed;
     left: 0;
     top: 0;
@@ -33,7 +32,7 @@ td {
  	border-color: orange;
  }
  .book {
- 	background-color: #304250;
+  background-color: #304250;
   }
  
  .row {
@@ -42,16 +41,18 @@ td {
  #colin {
  	margin-left: 2%;
  }
- 
+
  h2 {
  	color: white;
+    font-family: cursive;
  }
- 
+ .mp {
+    background-image:url("imagens/padrao.png"); 
+     }
  #a {
  color: black;
  } 
  .footer {
- 	max-height: 30px;
     position: fixed;
     left: 0;
     bottom: 0;
@@ -64,7 +65,7 @@ td {
 	border-radius: 20px;
 }
 .media {
-	background-color: white;
+    background-color: #205250;
 	border:solid;
 	border-radius: 6px;
 }
