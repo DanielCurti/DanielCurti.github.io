@@ -20,7 +20,9 @@ td {
  .logo {
  	font-family: arial black;
  }
-
+.slide {
+    z-index: 0;
+}
  #borda {
  	border-color: orange;
  	color:orange;
