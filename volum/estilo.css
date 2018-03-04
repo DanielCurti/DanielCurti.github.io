@@ -81,3 +81,6 @@ td {
 		text-decoration: none;
 		color: #ff791f;
 	}
+    .wts:hover {
+        color: green;
+    }
